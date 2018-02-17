@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    number1:
+    <input type:"text" id="num1">
+    number2:
+    <input type:"text" id="num2">
+    
+    <button onclick="add(a,b)">+</button>
+    <button onclick="subtract(a,b)">-</button>
+    <button onclick="multiply(a,b)">*</button>
+    <button onclick="divide(a,b)">/</button>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script>
+    function add(a,b){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        document.getElementById("a").innerHTML=Number(num1);
+        document.getElementById("b").innerHTML=Number(num2);
+        var x = Number(num1)+Number(num2);
+        document.getElementById("c").innerHTML= x;
+    }
+      
+        function subtract(a,b){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+
+        document.getElementById("a").innerHTML=Number(num1);
+        document.getElementById("b").innerHTML=Number(num2);
+        var x = Number(num1)-Number(num2);
+        document.getElementById("c").innerHTML= x;
+        }
+        function multiply(a,b){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+        document.getElementById("a").innerHTML=Number(num1);
+        document.getElementById("b").innerHTML=Number(num2);
+        var x = Number(num1)*Number(num2);
+        document.getElementById("c").innerHTML= x;}
+                function divide(a,b){
+        var num1= document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        document.getElementById("a").innerHTML=Number(num1);
+        document.getElementById("b").innerHTML=Number(num2);
+        var x = Number(num1)/Number(num2);
+        document.getElementById("c").innerHTML= x;
+    }
+
+        </script>
+
+    
+</body>
+</html>
